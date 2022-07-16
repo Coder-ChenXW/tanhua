@@ -1,12 +1,14 @@
 package com.tanhua.server.controller;
 
-import com.tanhua.commons.utils.JwtUtils;
 import com.tanhua.model.domain.UserInfo;
+import com.tanhua.server.interceptor.UserHolder;
 import com.tanhua.server.service.UserInfoService;
-import io.jsonwebtoken.Claims;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
 
 
 @RestController
@@ -23,17 +25,26 @@ public class UserController {
      */
     @PostMapping("/loginReginfo")
     public ResponseEntity loginReinfo(@RequestBody UserInfo userInfo, @RequestHeader("Authorization") String token) {
-        boolean verifyToken = JwtUtils.verifyToken(token);
-        if (!verifyToken) {
-            return ResponseEntity.status(401).body(null);
-        }
-        Claims claims = JwtUtils.getClaims(token);
-        Integer id = (Integer) claims.get("id");
-        userInfo.setId(Long.valueOf(id));
+
+        userInfo.setId(UserHolder.getUserId());
 
         userInfoService.save(userInfo);
         return ResponseEntity.ok(null);
     }
 
 
+    /**
+     * @Function: 功能描述 上传用户头像
+     * @Author: ChenXW
+     * @Date: 14:01 2022/7/16
+     */
+    @PostMapping("/loginReginfo/head")
+    public ResponseEntity head(MultipartFile headPhoto,@RequestHeader("Authorization") String token) throws IOException {
+        //向userinfo获取用户id
+
+
+        userInfoService.updateHead(headPhoto,UserHolder.getUserId());
+        return ResponseEntity.ok(null);
+
+    }
 }

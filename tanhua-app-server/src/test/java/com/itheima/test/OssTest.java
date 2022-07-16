@@ -27,7 +27,7 @@ public class OssTest {
 
     @Test
     public void testTemplateUpload() throws FileNotFoundException {
-        String path = "D:\\project-img\\reggie\\zhoujielun.png";
+        String path = "D:\\project-img\\reggie\\jxs.png";
 
         FileInputStream inputStream = new FileInputStream(new File(path));
         String imageUrl = template.upload(path, inputStream);

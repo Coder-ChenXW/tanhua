@@ -6,4 +6,6 @@ public interface UserInfoApi {
     public void save(UserInfo userInfo);
 
     void update(UserInfo userInfo);
+
+    UserInfo findById(Long id);
 }

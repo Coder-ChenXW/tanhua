@@ -4,6 +4,8 @@ import com.tanhua.autoconfig.template.SmsTemplate;
 import com.tanhua.commons.utils.JwtUtils;
 import com.tanhua.dubbo.api.UserApi;
 import com.tanhua.model.domain.User;
+import com.tanhua.model.vo.ErrorResult;
+import com.tanhua.server.exception.BusinessException;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,7 +56,7 @@ public class UserService {
         //2、对验证码进行校验（验证码是否存在，是否和输入的验证码一致）
         if(StringUtils.isEmpty(redisCode) || !redisCode.equals(code)) {
             //验证码无效
-            throw new RuntimeException("验证码错误");
+            throw new BusinessException(ErrorResult.loginError());
         }
         //3、删除redis中的验证码
         redisTemplate.delete("CHECK_CODE_" + phone);
