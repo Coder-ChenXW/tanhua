@@ -1,0 +1,34 @@
+#服务端口
+server:
+  port: 18080
+spring:
+  application:
+    name: tanhua-app-server
+  redis:  #redis配置
+    port: 6379
+    host: 192.168.136.160
+  cloud:  #nacos配置
+    nacos:
+      discovery:
+        server-addr: 192.168.136.160:8848
+dubbo:    #dubbo配置
+  registry:
+    address: spring-cloud://localhost
+  consumer:
+    check: false
+tanhua:
+  sms:
+    signName: tanhua
+    templateCode: SMS_106590012423423
+    accessKey: LTAI5tCCK6DfMXZFPZxZB6qN
+    secret: ZgBBhd015DUNAcMgCmM5ILHlkMvyR9
+  oss:
+    accessKey: LTAI5tCCK6DfMXZFPZxZB6qN
+    secret: ZgBBhd015DUNAcMgCmM5ILHlkMvyR9
+    endpoint: oss-cn-beijing.aliyuncs.com
+    bucketName: tanhuacouldplatform
+    url: https://tanhuacouldplatform.oss-cn-beijing.aliyuncs.com/
+  aip:
+    appId: 23708310
+    apiKey: XiqaqHmB0wkLbgvPSjwSPM3O
+    secretKey: qh6pguqsxfLo1G8GcKEorz2E5xp1ctRi
