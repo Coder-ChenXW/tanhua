@@ -17,7 +17,7 @@ public class RecommendUserApiTest {
     private RecommendUserApi userApi;
 
     @Test
-    public void testFindByMobile() {
+    public  void testFindByMobile() {
         RecommendUser recommendUser = userApi.queryWithMaxScore(106L);
         System.out.println(recommendUser);
     }

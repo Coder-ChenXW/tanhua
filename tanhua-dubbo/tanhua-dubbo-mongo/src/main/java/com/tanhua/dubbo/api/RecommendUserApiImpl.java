@@ -34,15 +34,15 @@ public class RecommendUserApiImpl  implements RecommendUserApi {
 
     //分页查询
     public PageResult queryRecommendUserList(Integer page, Integer pagesize, Long toUserId) {
-        //1、构建Criteria对象
+        //构建Criteria对象
         Criteria criteria = Criteria.where("toUserId").is(toUserId);
-        //2、创建Query对象
+        //创建Query对象
         Query query = Query.query(criteria).with(Sort.by(Sort.Order.desc("score"))).limit(pagesize)
                 .skip((page - 1) * pagesize);
-        //3、调用mongoTemplate查询
+        //调用mongoTemplate查询
         List<RecommendUser> list = mongoTemplate.find(query, RecommendUser.class);
         long count = mongoTemplate.count(query, RecommendUser.class);
-        //4、构建返回值PageResult
+        //构建返回值PageResult
         return  new PageResult(page,pagesize,count,list);
     }
 }

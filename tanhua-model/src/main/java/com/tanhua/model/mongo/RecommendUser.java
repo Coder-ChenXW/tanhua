@@ -1,9 +1,10 @@
 package com.tanhua.model.mongo;
 
-import cn.hutool.core.lang.ObjectId;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @AllArgsConstructor

@@ -6,12 +6,17 @@ import java.util.List;
 import java.util.Map;
 
 public interface UserInfoApi {
+
     public void save(UserInfo userInfo);
 
-    void update(UserInfo userInfo);
+    public void update(UserInfo userInfo);
 
+    //根据id查询
     UserInfo findById(Long id);
 
-    //批量查询用户详情
+    /**
+     * 批量查询用户详情
+     *    返回值：Map<id,UserInfo>
+     */
     Map<Long,UserInfo> findByIds(List<Long> userIds,UserInfo info);
 }
