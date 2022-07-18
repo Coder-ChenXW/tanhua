@@ -25,4 +25,21 @@ public class UserApiImpl  implements UserApi{
         userMapper.insert(user);
         return user.getId();
     }
+
+    @Override
+    public void update(User user) {
+        userMapper.updateById(user);
+    }
+
+    @Override
+    public User findById(Long userId) {
+        return userMapper.selectById(userId);
+    }
+
+    @Override
+    public User findByHuanxin(String huanxinId) {
+        QueryWrapper<User> qw = new QueryWrapper<>();
+        qw.eq("hx_user",huanxinId);
+        return userMapper.selectOne(qw);
+    }
 }

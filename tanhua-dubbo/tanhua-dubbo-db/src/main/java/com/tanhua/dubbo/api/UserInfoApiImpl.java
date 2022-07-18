@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 @DubboService
-public class UserInfoApiImpl implements  UserInfoApi {
+public class UserInfoApiImpl implements UserInfoApi {
 
     @Autowired
     private UserInfoMapper userInfoMapper;
@@ -36,14 +36,17 @@ public class UserInfoApiImpl implements  UserInfoApi {
     public Map<Long, UserInfo> findByIds(List<Long> userIds, UserInfo info) {
         QueryWrapper qw = new QueryWrapper();
         //1、用户id列表
-        qw.in("id",userIds);
+        qw.in("id", userIds);
         //2、添加筛选条件
-        if(info != null) {
-            if(info.getAge() != null) {
-                qw.lt("age",info.getAge());
+        if (info != null) {
+            if (info.getAge() != null) {
+                qw.lt("age", info.getAge());
             }
-            if(!StringUtils.isEmpty(info.getGender())) {
-                qw.eq("gender",info.getGender());
+            if (!StringUtils.isEmpty(info.getGender())) {
+                qw.eq("gender", info.getGender());
+            }
+            if (!StringUtils.isEmpty(info.getNickname())) {
+                qw.like("nickname", info.getNickname());
             }
         }
         List<UserInfo> list = userInfoMapper.selectList(qw);
