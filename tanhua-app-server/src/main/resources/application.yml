@@ -17,6 +17,9 @@ dubbo:    #dubbo配置
   consumer:
     check: false
 tanhua:
+  default:
+    recommend:
+      users: 2,3,8,10,18,20,24,29,27,32,36,37,56,64,75,88
   sms:
     signName: tanhua
     templateCode: SMS_106590012423423
@@ -36,3 +39,19 @@ tanhua:
     appkey: 1141210308180326#tanhua
     clientId: YXA6jmV_s7jCQ3y8Tw17A8PH5A
     clientSecret: YXA6HK0HxA6r3k9Ma8wX-cA-kuFh1-M
+
+fdfs:
+  so-timeout: 1500
+  connect-timeout: 600
+  #缩略图生成参数
+  thumb-image:
+    width: 150
+    height: 150
+  #TrackerList参数,支持多个
+  tracker-list: 192.168.136.160:22122
+  web-server-url: http://192.168.136.160:8888/
+Spring:
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 30MB

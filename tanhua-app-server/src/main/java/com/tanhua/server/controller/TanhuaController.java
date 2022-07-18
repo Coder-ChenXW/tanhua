@@ -1,6 +1,7 @@
 package com.tanhua.server.controller;
 
 import com.tanhua.model.dto.RecommendUserDto;
+import com.tanhua.model.vo.NearUserVo;
 import com.tanhua.model.vo.PageResult;
 import com.tanhua.model.vo.TodayBest;
 import com.tanhua.server.service.TanhuaService;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -70,4 +72,52 @@ public class TanhuaController {
         tanhuaService.replyQuestions(userId,reply);
         return ResponseEntity.ok(null);
     }
+
+    /**
+     * @Function: 功能描述 推荐用户列表
+     * @Author: ChenXW
+     * @Date: 16:21 2022/7/18
+     */
+    @GetMapping("/cards")
+    public ResponseEntity queryCardsList() {
+        List<TodayBest> list = this.tanhuaService.queryCardsList();
+        return ResponseEntity.ok(list);
+    }
+
+    /**
+     * @Function: 功能描述 喜欢
+     * @Author: ChenXW
+     * @Date: 16:45 2022/7/18
+     */
+    @GetMapping("{id}/love")
+    public ResponseEntity<Void> likeUser(@PathVariable("id") Long likeUserId) {
+        this.tanhuaService.likeUser(likeUserId);
+        return ResponseEntity.ok(null);
+    }
+
+
+    /**
+     * @Function: 功能描述 不喜欢
+     * @Author: ChenXW
+     * @Date: 17:11 2022/7/18
+     */
+    @GetMapping("{id}/unlove")
+    public ResponseEntity<Void> notLikeUser(@PathVariable("id") Long likeUserId) {
+        this.tanhuaService.notLikeUser(likeUserId);
+        return ResponseEntity.ok(null);
+    }
+
+
+    /**
+     * @Function: 功能描述 搜附近
+     * @Author: ChenXW
+     * @Date: 17:59 2022/7/18
+     */
+    @GetMapping("/search")
+    public ResponseEntity<List<NearUserVo>> queryNearUser(String gender,
+                                                          @RequestParam(defaultValue = "2000") String distance) {
+        List<NearUserVo> list = this.tanhuaService.queryNearUser(gender, distance);
+        return ResponseEntity.ok(list);
+    }
 }
+

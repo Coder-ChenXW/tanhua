@@ -4,6 +4,7 @@ package com.tanhua.server.controller;
 import com.tanhua.model.mongo.Movement;
 import com.tanhua.model.vo.MovementsVo;
 import com.tanhua.model.vo.PageResult;
+import com.tanhua.model.vo.VisitorsVo;
 import com.tanhua.server.service.CommentsService;
 import com.tanhua.server.service.MovementService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.List;
 
 @RestController
 @RequestMapping("/movements")
@@ -97,8 +99,8 @@ public class MovementController {
         Integer likeCount = commentsService.likeComment(movementId);
         return ResponseEntity.ok(likeCount);
     }
-    
-    /** 
+
+    /**
      * @Function: 功能描述 取消点赞
      * @Author: ChenXW
      * @Date: 21:03 2022/7/17
@@ -108,8 +110,8 @@ public class MovementController {
         Integer likeCount = commentsService.dislikeComment(movementId);
         return ResponseEntity.ok(likeCount);
     }
-    
-    /** 
+
+    /**
      * @Function: 功能描述 喜欢
      * @Author: ChenXW
      * @Date: 21:41 2022/7/17
@@ -129,5 +131,16 @@ public class MovementController {
     public ResponseEntity unlove(@PathVariable("id") String movementId) {
         Integer likeCount = commentsService.disloveComment(movementId);
         return ResponseEntity.ok(likeCount);
+    }
+
+    /**
+     * @Function: 功能描述 谁看过我
+     * @Author: ChenXW
+     * @Date: 18:53 2022/7/18
+     */
+    @GetMapping("visitors")
+    public ResponseEntity queryVisitorsList() {
+        List<VisitorsVo> list = movementService.queryVisitorsList();
+        return ResponseEntity.ok(list);
     }
 }

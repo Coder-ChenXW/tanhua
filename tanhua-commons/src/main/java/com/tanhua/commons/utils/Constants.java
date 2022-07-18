@@ -25,10 +25,7 @@ public class Constants {
     public static final String VIDEO_LIKE_HASHKEY = "VIDEO_LIKE";
 
     //访问用户
-    public static final String VISITORS = "VISITORS";
-
-    //关注用户
-    public static final String FOCUS_USER = "FOCUS_USER_{}_{}";
+    public static final String VISITORS_USER = "VISITOR_USER";
 
     //初始化密码
     public static final String INIT_PASSWORD = "123456";
@@ -41,4 +38,13 @@ public class Constants {
 
     //jwt超时时间
     public static final int JWT_TIME_OUT = 3_600;
+
+    //用户喜欢Redis的key
+    public static final String USER_LIKE_KEY="USER_LIKE_SET_";
+
+    //用户不喜欢Redis的key
+    public static final String USER_NOT_LIKE_KEY="USER_NOT_LIKE_SET_";
+
+    //关注用户的key
+    public static final String FOCUS_USER_KEY = "FOCUS_USER_KEY_";
 }
