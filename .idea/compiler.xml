@@ -16,13 +16,17 @@
         <module name="tanhua-app-server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="tanhua-admin" target="1.8" />
+      <module name="tanhua-gateway" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="tanhua-app-server" options="-parameters" />
       <module name="tanhua-autoconfig" options="-parameters" />
       <module name="tanhua-commons" options="-parameters" />
+      <module name="tanhua-dubbo" options="-parameters" />
       <module name="tanhua-dubbo-db" options="-parameters" />
       <module name="tanhua-dubbo-interface" options="-parameters" />
       <module name="tanhua-dubbo-mongo" options="-parameters" />
