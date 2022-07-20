@@ -2,6 +2,8 @@ package com.tanhua.dubbo.api;
 
 import cn.hutool.core.collection.CollUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tanhua.dubbo.mappers.UserInfoMapper;
 import com.tanhua.model.domain.UserInfo;
 import org.apache.dubbo.config.annotation.DubboService;
@@ -52,5 +54,10 @@ public class UserInfoApiImpl implements UserInfoApi {
         List<UserInfo> list = userInfoMapper.selectList(qw);
         Map<Long, UserInfo> map = CollUtil.fieldValueMap(list, "id");
         return map;
+    }
+
+    @Override
+    public IPage<UserInfo> findAll(Integer page, Integer pagesize) {
+        return userInfoMapper.selectPage(new Page<UserInfo>(page,pagesize),null);
     }
 }

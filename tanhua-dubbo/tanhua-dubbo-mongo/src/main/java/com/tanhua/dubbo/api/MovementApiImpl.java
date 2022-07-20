@@ -85,14 +85,14 @@ public class MovementApiImpl implements MovementApi {
 
         Query movementQuery = Query.query(Criteria.where("id").in(list));
 
-        return mongoTemplate.find(movementQuery,Movement.class);
+        return mongoTemplate.find(movementQuery, Movement.class);
     }
 
     //随机查询多条数据
     @Override
     public List<Movement> randomMovements(Integer counts) {
         //创建对象统计参数
-        TypedAggregation aggregation= Aggregation.newAggregation(Movement.class,Aggregation.sample(counts));
+        TypedAggregation aggregation = Aggregation.newAggregation(Movement.class, Aggregation.sample(counts));
         //调用mongoTemplate方法统计
         AggregationResults<Movement> results = mongoTemplate.aggregate(aggregation, Movement.class);
         //获取统计结果
@@ -102,13 +102,28 @@ public class MovementApiImpl implements MovementApi {
     //根据pid查询
     @Override
     public List<Movement> findMovementsByPids(List<Long> pids) {
-        Query query=Query.query(Criteria.where("pid").in(pids));
+        Query query = Query.query(Criteria.where("pid").in(pids));
 
-        return mongoTemplate.find(query,Movement.class);
+        return mongoTemplate.find(query, Movement.class);
     }
 
     @Override
     public Movement findById(String movementId) {
-        return mongoTemplate.findById(movementId,Movement.class);
+        return mongoTemplate.findById(movementId, Movement.class);
+    }
+
+    @Override
+    public PageResult findByUserId(Long uid, Integer state, Integer page, Integer pagesize) {
+        Query query = new Query();
+        if(uid != null) {
+            query.addCriteria(Criteria.where("userId").is(uid));
+        }
+        if(state != null) {
+            query.addCriteria(Criteria.where("state").is(state));
+        }
+        long count = mongoTemplate.count(query, Movement.class);
+        query.with(Sort.by(Sort.Order.desc("created"))).limit(pagesize).skip((page -1) * pagesize);
+        List<Movement> list = mongoTemplate.find(query, Movement.class);
+        return new PageResult(page,pagesize,count,list);
     }
 }

@@ -25,7 +25,7 @@ public class AdminHolder {
     }
 
     //获取当前用户的id
-    public static Long getUserId() {
+    public static Long getId() {
         return admins.get().getId();
     }
 }
