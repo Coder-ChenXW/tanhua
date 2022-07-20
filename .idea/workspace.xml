@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b9d9f58-c56c-4112-b519-60147cabc104" name="Default Changelist" comment="完成左划右划，地理位置搜附近，访客，小视频等相关功能">
+    <list default="true" id="9b9d9f58-c56c-4112-b519-60147cabc104" name="Default Changelist" comment="回退版本，今日后台没写成功">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/AppServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/AppServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/interceptor/TokenInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/interceptor/TokenInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/service/SmallVideosService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/service/SmallVideosService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-app-server/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/AppServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/AppServerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/interceptor/TokenInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/interceptor/TokenInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/service/SmallVideosService.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/service/SmallVideosService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/src/main/resources/application.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +96,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/src/test/java/com" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tanhua-gateway/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -102,11 +113,11 @@
       <recent name="com.tanhua.server.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\java\springboot\tanhua\tanhua-gateway\src\main\resources" />
       <recent name="E:\project\java\springboot\tanhua\tanhua-autoconfig\src\main\resources" />
       <recent name="E:\project\java\springboot\tanhua\tanhua-autoconfig\src\main\java" />
       <recent name="E:\project\java\springboot\tanhua" />
       <recent name="E:\project\java\springboot\tanhua\tanhua-admin\src\main\java" />
-      <recent name="E:\project\java\springboot\tanhua\tanhua-autoconfig\src\main\java\com\tanhua\autoconfig\template" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.tanhua.autoconfig" />
@@ -122,7 +133,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HuanxinTest.register">
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -203,6 +214,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="tanhua-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tanhua.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tanhua.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.HuanxinTest.register" />
       <item itemvalue="JUnit.TestUserLocationApi.testUpdateUserLocation" />
@@ -210,9 +234,11 @@
       <item itemvalue="Spring Boot.AppServerApplication" />
       <item itemvalue="Spring Boot.DubboDBApplication" />
       <item itemvalue="Spring Boot.DubboMongoApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="JUnit.FastDFSTest.testUpload" />
         <item itemvalue="JUnit.TestUserLocationApi.testUpdateUserLocation" />
         <item itemvalue="JUnit.HuanxinTest.register" />
@@ -248,7 +274,9 @@
       <workItem from="1658214918090" duration="902000" />
       <workItem from="1658215911051" duration="5000" />
       <workItem from="1658216546271" duration="5141000" />
-      <workItem from="1658228112895" duration="300000" />
+      <workItem from="1658228112895" duration="699000" />
+      <workItem from="1658283012159" duration="602000" />
+      <workItem from="1658283821837" duration="2631000" />
     </task>
     <task id="LOCAL-00001" summary="v2-1">
       <created>1618570262082</created>
@@ -341,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658148604577</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="回退版本，今日后台没写成功">
+      <created>1658228564793</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1658228564793</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +442,8 @@
     <MESSAGE value="完成圈子动态，个人动态，圈子互动，发布评论，点赞，喜欢等相关功能" />
     <MESSAGE value="完成即时通讯，好友添加，好友申请，好友列表相关功能" />
     <MESSAGE value="完成左划右划，地理位置搜附近，访客，小视频等相关功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成左划右划，地理位置搜附近，访客，小视频等相关功能" />
+    <MESSAGE value="回退版本，今日后台没写成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="回退版本，今日后台没写成功" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -16,12 +16,12 @@ public class TokenInterceptor implements HandlerInterceptor {
         String token = request.getHeader("Authorization");
 
         //使用工具类判断token是否有效
-        boolean verifyToken = JwtUtils.verifyToken(token);
-
-        if (!verifyToken) {
-            response.setStatus(401);
-            return false;
-        }
+//        boolean verifyToken = JwtUtils.verifyToken(token);
+//
+//        if (!verifyToken) {
+//            response.setStatus(401);
+//            return false;
+//        }
 
         //正常方向
 
