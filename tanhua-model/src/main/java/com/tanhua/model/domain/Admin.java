@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
+
+
 //后台系统的管理员对象
 @Data
 @NoArgsConstructor

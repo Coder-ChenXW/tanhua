@@ -4,19 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b9d9f58-c56c-4112-b519-60147cabc104" name="Default Changelist" comment="回退版本，今日后台没写成功">
+    <list default="true" id="9b9d9f58-c56c-4112-b519-60147cabc104" name="Default Changelist" comment="网关配置成功">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/AppServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/AppServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/interceptor/TokenInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/interceptor/TokenInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/service/SmallVideosService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/service/SmallVideosService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-app-server/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/AppServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/AppServerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/interceptor/TokenInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/interceptor/TokenInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/service/SmallVideosService.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/service/SmallVideosService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-app-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-app-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-commons/src/main/java/com/tanhua/commons/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-commons/src/main/java/com/tanhua/commons/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-commons/target/classes/com/tanhua/commons/utils/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-commons/target/classes/com/tanhua/commons/utils/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-db/target/classes/com/tanhua/dubbo/DubboDBApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-db/target/classes/com/tanhua/dubbo/DubboDBApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-db/target/classes/com/tanhua/dubbo/api/BlackListApiImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-db/target/classes/com/tanhua/dubbo/api/BlackListApiImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-db/target/classes/com/tanhua/dubbo/api/QuestionApiImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-db/target/classes/com/tanhua/dubbo/api/QuestionApiImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-db/target/classes/com/tanhua/dubbo/api/SettingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-db/target/classes/com/tanhua/dubbo/api/SettingServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-db/target/classes/com/tanhua/dubbo/api/UserApiImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-db/target/classes/com/tanhua/dubbo/api/UserApiImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-db/target/classes/com/tanhua/dubbo/api/UserInfoApiImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-db/target/classes/com/tanhua/dubbo/api/UserInfoApiImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-db/target/classes/com/tanhua/dubbo/handler/MyMetaObjectHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-db/target/classes/com/tanhua/dubbo/handler/MyMetaObjectHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-db/target/classes/com/tanhua/dubbo/mappers/UserInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-db/target/classes/com/tanhua/dubbo/mappers/UserInfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/DubboMongoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/DubboMongoApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/api/CommentApiImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/api/CommentApiImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/api/FriendApiImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/api/FriendApiImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/api/MovementApiImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/api/MovementApiImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/api/RecommendUserApiImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/api/RecommendUserApiImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/api/UserLikeApiImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/api/UserLikeApiImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/api/UserLocationApiImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/api/UserLocationApiImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/api/VideoApiImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/api/VideoApiImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/api/VisitorsApiImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/api/VisitorsApiImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/utils/IdWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/utils/IdWorker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/utils/TimeLineService.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/target/classes/com/tanhua/dubbo/utils/TimeLineService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-model/src/main/java/com/tanhua/model/domain/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-model/src/main/java/com/tanhua/model/domain/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-model/target/classes/com/tanhua/model/domain/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-model/target/classes/com/tanhua/model/domain/Admin.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,9 +112,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/src/test/java/com" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tanhua-gateway/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tanhua-admin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -113,10 +130,10 @@
       <recent name="com.tanhua.server.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\java\springboot\tanhua" />
       <recent name="E:\project\java\springboot\tanhua\tanhua-gateway\src\main\resources" />
       <recent name="E:\project\java\springboot\tanhua\tanhua-autoconfig\src\main\resources" />
       <recent name="E:\project\java\springboot\tanhua\tanhua-autoconfig\src\main\java" />
-      <recent name="E:\project\java\springboot\tanhua" />
       <recent name="E:\project\java\springboot\tanhua\tanhua-admin\src\main\java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -126,6 +143,12 @@
       <recent name="com.itheima.test" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean:clean" />
+      <command value="mvn install" />
+    </option>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -133,7 +156,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager" selected="Spring Boot.AdminServerApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -193,6 +216,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AdminServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="tanhua-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tanhua.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tanhua.admin.AdminServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AppServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="tanhua-app-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tanhua.server.AppServerApplication" />
@@ -235,9 +271,11 @@
       <item itemvalue="Spring Boot.DubboDBApplication" />
       <item itemvalue="Spring Boot.DubboMongoApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.AdminServerApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.AdminServerApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="JUnit.FastDFSTest.testUpload" />
         <item itemvalue="JUnit.TestUserLocationApi.testUpdateUserLocation" />
@@ -277,6 +315,8 @@
       <workItem from="1658228112895" duration="699000" />
       <workItem from="1658283012159" duration="602000" />
       <workItem from="1658283821837" duration="2631000" />
+      <workItem from="1658310177056" duration="2189000" />
+      <workItem from="1658312453317" duration="1044000" />
     </task>
     <task id="LOCAL-00001" summary="v2-1">
       <created>1618570262082</created>

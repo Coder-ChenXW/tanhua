@@ -1,0 +1,9 @@
+com\tanhua\autoconfig\properties\AipFaceProperties.class
+com\tanhua\autoconfig\properties\OssProperties.class
+com\tanhua\autoconfig\template\HuanXinTemplate.class
+com\tanhua\autoconfig\TanhuaAutoConfiguration.class
+com\tanhua\autoconfig\template\SmsTemplate.class
+com\tanhua\autoconfig\properties\HuanXinProperties.class
+com\tanhua\autoconfig\properties\SmsProperties.class
+com\tanhua\autoconfig\template\OssTemplate.class
+com\tanhua\autoconfig\template\AipFaceTemplate.class

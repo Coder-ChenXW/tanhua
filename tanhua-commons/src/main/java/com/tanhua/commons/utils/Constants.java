@@ -6,6 +6,11 @@ public class Constants {
     //手机APP短信验证码CHECK_CODE_
     public static final String SMS_CODE = "CHECK_CODE_";
 
+
+    //管理后台验证码redis的key
+    public static final String CAP_CODE = "CAP_CODE_";
+
+
     //推荐动态
     public static final String MOVEMENTS_RECOMMEND = "MOVEMENTS_RECOMMEND_";
 
