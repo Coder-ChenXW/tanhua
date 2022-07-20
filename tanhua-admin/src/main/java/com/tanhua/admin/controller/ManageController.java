@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
+
 @RestController
 @RequestMapping("/manage")
 public class ManageController {
@@ -63,5 +65,29 @@ public class ManageController {
                                    Long uid,Integer state) {
         PageResult result = managerService.findAllMovements(page,pagesize,uid,state);
         return ResponseEntity.ok(result);
+    }
+
+
+    /**
+     * @Function: 功能描述 用户冻结
+     * @Author: ChenXW
+     * @Date: 20:47 2022/7/20
+     */
+    @PostMapping("/users/freeze")
+    public ResponseEntity freeze(@RequestBody Map params) {
+        Map map =  managerService.userFreeze(params);
+        return ResponseEntity.ok(map);
+    }
+
+
+    /**
+     * @Function: 功能描述 用户解冻
+     * @Author: ChenXW
+     * @Date: 20:57 2022/7/20
+     */
+    @PostMapping("/users/unfreeze")
+    public ResponseEntity unfreeze(@RequestBody  Map params) {
+        Map map =  managerService.userUnfreeze(params);
+        return ResponseEntity.ok(map);
     }
 }

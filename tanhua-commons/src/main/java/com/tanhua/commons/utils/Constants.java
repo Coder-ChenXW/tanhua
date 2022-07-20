@@ -10,6 +10,9 @@ public class Constants {
     //管理后台验证码redis的key
     public static final String CAP_CODE = "CAP_CODE_";
 
+    //冻结用户状态KEY
+    public static final String USER_FREEZE = "USER_FREEZE_";
+
 
     //推荐动态
     public static final String MOVEMENTS_RECOMMEND = "MOVEMENTS_RECOMMEND_";

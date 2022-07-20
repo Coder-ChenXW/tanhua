@@ -164,8 +164,12 @@ public class MovementService {
     }
 
 
+    @Autowired
+    private MqMessageService mqMessageService;
+
     //根据id查询
     public MovementsVo findById(String movementId) {
+        mqMessageService.sendLogMessage(UserHolder.getUserId(),"0202","movement",movementId);
         //调用api根据id查询动态详细
         Movement movement = movementApi.findById(movementId);
         //转换vo对象
