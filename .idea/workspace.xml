@@ -4,34 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b9d9f58-c56c-4112-b519-60147cabc104" name="Default Changelist" comment="完成管理员登录，用户管理等相关功能">
-      <change afterPath="$PROJECT_DIR$/tanhua-admin/src/main/java/com/tanhua/admin/listener/LogListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tanhua-admin/src/main/java/com/tanhua/admin/mapper/AnalysisMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tanhua-admin/src/main/java/com/tanhua/admin/mapper/LogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tanhua-admin/target/classes/com/tanhua/admin/listener/LogListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tanhua-admin/target/classes/com/tanhua/admin/mapper/AnalysisMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tanhua-admin/target/classes/com/tanhua/admin/mapper/LogMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/service/MqMessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/service/UserFreezeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/service/MqMessageService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/service/UserFreezeService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tanhua-model/src/main/java/com/tanhua/model/domain/Analysis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tanhua-model/src/main/java/com/tanhua/model/domain/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tanhua-model/target/classes/com/tanhua/model/domain/Analysis$AnalysisBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tanhua-model/target/classes/com/tanhua/model/domain/Analysis.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tanhua-model/target/classes/com/tanhua/model/domain/Log$LogBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tanhua-model/target/classes/com/tanhua/model/domain/Log.class" afterDir="false" />
+    <list default="true" id="9b9d9f58-c56c-4112-b519-60147cabc104" name="Default Changelist" comment="完成用户冻结，日志采集相关功能">
+      <change afterPath="$PROJECT_DIR$/tanhua-admin/src/main/java/com/tanhua/admin/service/AnalysisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-admin/src/main/java/com/tanhua/admin/task/AnalysisTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-admin/src/test/java/com/tanhua/admin/GreenTemplateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-admin/src/test/java/com/tanhua/admin/LogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-admin/target/classes/com/tanhua/admin/service/AnalysisService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-admin/target/classes/com/tanhua/admin/task/AnalysisTask.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-admin/target/test-classes/com/tanhua/admin/LogTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-model/src/main/java/com/tanhua/model/mongo/MovementScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-model/src/main/java/com/tanhua/model/mongo/VideoScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-model/target/classes/com/tanhua/model/mongo/MovementScore.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-model/target/classes/com/tanhua/model/mongo/VideoScore.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-recommend/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-recommend/src/main/java/com/tanhua/recommend/RecommendApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-recommend/src/main/java/com/tanhua/recommend/listener/RecommendMovementListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-recommend/src/main/java/com/tanhua/recommend/listener/RecommendVideoListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-recommend/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-recommend/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-recommend/target/classes/com/tanhua/recommend/RecommendApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-recommend/target/classes/com/tanhua/recommend/listener/RecommendMovementListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tanhua-recommend/target/classes/com/tanhua/recommend/listener/RecommendVideoListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-admin/src/main/java/com/tanhua/admin/controller/ManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-admin/src/main/java/com/tanhua/admin/controller/ManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-admin/src/main/java/com/tanhua/admin/service/ManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-admin/src/main/java/com/tanhua/admin/service/ManagerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-admin/target/classes/com/tanhua/admin/controller/ManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-admin/target/classes/com/tanhua/admin/controller/ManageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-admin/target/classes/com/tanhua/admin/service/ManagerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-admin/target/classes/com/tanhua/admin/service/ManagerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/service/MovementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/service/MovementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-app-server/src/main/java/com/tanhua/server/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/service/MovementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/service/MovementService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-app-server/target/classes/com/tanhua/server/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-commons/src/main/java/com/tanhua/commons/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-commons/src/main/java/com/tanhua/commons/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tanhua-commons/target/classes/com/tanhua/commons/utils/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-commons/target/classes/com/tanhua/commons/utils/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-admin/src/main/java/com/tanhua/admin/AdminServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-admin/src/main/java/com/tanhua/admin/AdminServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-admin/src/main/java/com/tanhua/admin/mapper/LogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-admin/src/main/java/com/tanhua/admin/mapper/LogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-admin/target/classes/com/tanhua/admin/AdminServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-admin/target/classes/com/tanhua/admin/AdminServerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tanhua-admin/target/classes/com/tanhua/admin/mapper/LogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/tanhua-admin/target/classes/com/tanhua/admin/mapper/LogMapper.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +112,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/tanhua-dubbo/tanhua-dubbo-mongo/src/test/java/com" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tanhua-admin/src/main/java/com/tanhua/admin/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tanhua-model/src/main/java/com/tanhua/model/mongo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -126,14 +127,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tanhua.admin.service" />
       <recent name="com.tanhua.server.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\java\springboot\tanhua\tanhua-model\src\main\java\com\tanhua\model\mongo" />
+      <recent name="E:\project\java\springboot\tanhua\tanhua-recommend\src\main\java" />
+      <recent name="E:\project\java\springboot\tanhua\tanhua-recommend\src\main\resources" />
+      <recent name="E:\project\java\springboot\tanhua\tanhua-admin\src\test\java" />
       <recent name="E:\project\java\springboot\tanhua\tanhua-admin\src\main\java\com\tanhua\admin\mapper" />
-      <recent name="E:\project\java\springboot\tanhua\tanhua-model\src\main\java\com\tanhua\model\domain" />
-      <recent name="E:\project\java\springboot\tanhua\tanhua-admin\src\main\java\com\tanhua\admin" />
-      <recent name="E:\project\java\springboot\tanhua\tanhua-app-server\src\main\java\com\tanhua\server\controller" />
-      <recent name="E:\project\java\springboot\tanhua" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.tanhua.autoconfig" />
@@ -155,7 +157,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AdminServerApplication">
+  <component name="RunManager" selected="Spring Boot.RecommendApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -178,22 +180,6 @@
       <option name="PACKAGE_NAME" value="com.itheima.test" />
       <option name="MAIN_CLASS_NAME" value="com.itheima.test.FastDFSTest" />
       <option name="METHOD_NAME" value="testUpload" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HuanxinTest.register" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tanhua-app-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itheima.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.itheima.test" />
-      <option name="MAIN_CLASS_NAME" value="com.itheima.test.HuanxinTest" />
-      <option name="METHOD_NAME" value="register" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -262,8 +248,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RecommendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="tanhua-recommend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tanhua.recommend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tanhua.recommend.RecommendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.HuanxinTest.register" />
       <item itemvalue="JUnit.TestUserLocationApi.testUpdateUserLocation" />
       <item itemvalue="JUnit.FastDFSTest.testUpload" />
       <item itemvalue="Spring Boot.AppServerApplication" />
@@ -271,14 +269,15 @@
       <item itemvalue="Spring Boot.DubboMongoApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.AdminServerApplication" />
+      <item itemvalue="Spring Boot.RecommendApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.RecommendApplication" />
         <item itemvalue="Spring Boot.AdminServerApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="JUnit.FastDFSTest.testUpload" />
         <item itemvalue="JUnit.TestUserLocationApi.testUpdateUserLocation" />
-        <item itemvalue="JUnit.HuanxinTest.register" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +315,9 @@
       <workItem from="1658283821837" duration="2631000" />
       <workItem from="1658310177056" duration="2189000" />
       <workItem from="1658312453317" duration="1380000" />
-      <workItem from="1658313943790" duration="9139000" />
+      <workItem from="1658313943790" duration="10185000" />
+      <workItem from="1658365045867" duration="3225000" />
+      <workItem from="1658372693551" duration="3329000" />
     </task>
     <task id="LOCAL-00001" summary="v2-1">
       <created>1618570262082</created>
@@ -430,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658318832550</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="完成用户冻结，日志采集相关功能">
+      <created>1658325552829</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1658325552829</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,7 +507,8 @@
     <MESSAGE value="回退版本，今日后台没写成功" />
     <MESSAGE value="后管平台搭建成功" />
     <MESSAGE value="完成管理员登录，用户管理等相关功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成管理员登录，用户管理等相关功能" />
+    <MESSAGE value="完成用户冻结，日志采集相关功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成用户冻结，日志采集相关功能" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
